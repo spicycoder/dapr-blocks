@@ -12,6 +12,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateStore", "StateManagement\StateStore\StateStore.csproj", "{9B143986-5C2A-4EEF-B8CD-BAE6373D1B94}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecretManagement", "SecretManagement", "{67466817-EBA8-4E74-84A1-E5BB5081D0F6}"
+	ProjectSection(SolutionItems) = preProject
+		SecretManagement\README.md = SecretManagement\README.md
+		SecretManagement\tye.yaml = SecretManagement\tye.yaml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretStore", "SecretManagement\SecretStore\SecretStore.csproj", "{91F6F399-03A7-41CC-999A-B8D8F34D787A}"
 EndProject
@@ -25,8 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "PubSub\Publish
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Subscriber", "PubSub\Subscriber\Subscriber.csproj", "{CFC4827C-894C-4E3F-A899-96C1069096B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "PubSub\Library\Library.csproj", "{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bindings", "Bindings", "{0AF21F68-BF09-452A-9E2B-784634156C71}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutputBindings", "Bindings\InputOutputBindings\InputOutputBindings.csproj", "{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}"
@@ -34,8 +36,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF3895AA-8455-4434-9CC4-93F3372034F8}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
-		components\statestore.yaml = components\statestore.yaml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{89137C38-994C-4B3B-9038-60CFB6C587BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Common\Library\Library.csproj", "{12E98050-DE60-4DE9-A152-70E36AA18A2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,14 +68,14 @@ Global
 		{CFC4827C-894C-4E3F-A899-96C1069096B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFC4827C-894C-4E3F-A899-96C1069096B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFC4827C-894C-4E3F-A899-96C1069096B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E98050-DE60-4DE9-A152-70E36AA18A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E98050-DE60-4DE9-A152-70E36AA18A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E98050-DE60-4DE9-A152-70E36AA18A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E98050-DE60-4DE9-A152-70E36AA18A2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,8 +86,8 @@ Global
 		{549981F6-6B96-4DEC-BA50-B92A6881DE5F} = {791CBF2B-9518-453F-B6A7-3F1E0D94A7BA}
 		{0E46D00B-64D9-45B1-ADDD-C7B9C894D406} = {39544871-08FC-4A79-966B-D2FA61824AEA}
 		{CFC4827C-894C-4E3F-A899-96C1069096B9} = {39544871-08FC-4A79-966B-D2FA61824AEA}
-		{AEF1FE5F-5D4C-4D1A-8B12-CDFFB377467B} = {39544871-08FC-4A79-966B-D2FA61824AEA}
 		{88E457A8-CF85-451C-BCA8-7DBE8A4D060F} = {0AF21F68-BF09-452A-9E2B-784634156C71}
+		{12E98050-DE60-4DE9-A152-70E36AA18A2F} = {89137C38-994C-4B3B-9038-60CFB6C587BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACDE83F9-34A1-4C7B-825E-E1FA75330F9E}

@@ -1,0 +1,11 @@
+name: secretmanagement
+extensions:
+  - name: dapr
+    log-level: debug
+    components-path: "./components/"
+services:
+- name: secret-management
+  project: ./SecretStore/SecretStore.csproj
+  bindings:
+    - port: 2503
+      protocol: http

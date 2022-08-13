@@ -2,6 +2,8 @@
 
 Dapr - `State Management` building block
 
+---
+
 ## Save State
 
 ```cs
@@ -11,6 +13,8 @@ await _daprClient.SaveStateAsync<T>(
                 value);
 ```
 
+---
+
 ## Read State
 
 ```cs
@@ -19,11 +23,15 @@ var value = await _daprClient.GetStateAsync<T>(
                 key);
 ```
 
+---
+
 ## Sample Configuration
 
 Create `statestore.yaml` files in some location
 
 Use this location as components directory in tye configuration
+
+---
 
 ### Redis Configuration
 
