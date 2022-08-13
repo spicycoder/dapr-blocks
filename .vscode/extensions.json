@@ -1,0 +1,18 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"marp-team.marp-vscode",
+		"bierner.markdown-checkbox",
+		"vsls-contrib.codetour",
+		"ms-azuretools.vscode-tye",
+		"ms-azuretools.vscode-dapr",
+		"ms-dotnettools.csharp"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+		
+	]
+}

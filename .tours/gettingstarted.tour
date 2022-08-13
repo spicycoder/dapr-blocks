@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "GettingStarted",
+  "steps": [
+    {
+      "file": "README.md",
+      "description": "# Pre-requisites\r\nInstall all `pre-requisites`",
+      "line": 28
+    },
+    {
+      "file": "README.md",
+      "description": "# Run\r\n\r\n`cd` into any directory (building block)\r\nExecute following command from `pwsh` / `bash`\r\n\r\n```sh\r\ncd ./StateManagement\r\ntye run\r\n```\r\n\r\nVerify if `Tye Dashboard` is accessible\r\n<http://localhost:8000/>",
+      "line": 37
+    }
+  ]
+}

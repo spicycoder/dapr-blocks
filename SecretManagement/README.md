@@ -1,3 +1,11 @@
+---
+marp: true
+theme: gaia
+author: SpicyCoder
+header: Dapr - Building Blocks
+footer: https://github.com/spicycoder/dapr-blocks
+---
+
 # Secret Management
 
 Dapr - `Secret Management` building block
@@ -16,16 +24,6 @@ var secret = await _daprClient.GetSecretAsync(
 
 ## Sample Configuration
 
-Create `local-secret-store.yaml` files in some location
-
-Use this location as components directory in tye configuration
-
----
-
-## Local File Configuration
-
-> Note: When using `tye` for orchestration, `tye` can only access configuration files that are at same or subdirectory level, where `tye.yaml` is present. If you try accessing parent directory, it won't work.
-
 ```yaml
 apiVersion: dapr.io/v1alpha1
 kind: Component
@@ -42,3 +40,11 @@ spec:
       value: ":"
 
 ```
+
+---
+
+## Local File Configuration
+
+Create `local-secret-store.yaml` files in some location, with content as above. Use this location as components directory in tye configuration
+
+> Note: When using `tye` for orchestration, `tye` can only access configuration files that are at same or subdirectory level, where `tye.yaml` is present. If you try accessing parent directory, it won't work.
