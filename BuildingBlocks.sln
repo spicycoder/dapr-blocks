@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StateManagement", "StateManagement", "{2453B952-63BB-4FE6-B901-C53632541C80}"
 	ProjectSection(SolutionItems) = preProject
 		StateManagement\README.md = StateManagement\README.md
+		StateManagement\tye.yaml = StateManagement\tye.yaml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateStore", "StateManagement\StateStore\StateStore.csproj", "{9B143986-5C2A-4EEF-B8CD-BAE6373D1B94}"
@@ -33,6 +34,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF3895AA-8455-4434-9CC4-93F3372034F8}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		components\statestore.yaml = components\statestore.yaml
 	EndProjectSection
 EndProject
 Global
