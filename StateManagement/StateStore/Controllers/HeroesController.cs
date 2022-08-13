@@ -9,10 +9,14 @@ namespace StateStore.Controllers
     {
         private const string StateStoreName = "statestore";
         private readonly DaprClient _daprClient;
+        private readonly ILogger<HeroesController> _logger;
 
-        public HeroesController(DaprClient daprClient)
+        public HeroesController(
+            DaprClient daprClient,
+            ILogger<HeroesController> logger)
         {
             _daprClient = daprClient;
+            _logger = logger;
         }
 
         [HttpPost("save")]
@@ -22,6 +26,8 @@ namespace StateStore.Controllers
                 StateStoreName,
                 hero.Name,
                 hero.Identity);
+
+            _logger.LogInformation("Saving state Key: {key}, Value: {value}", hero.Name, hero.Identity);
 
             return Ok();
         }
@@ -35,9 +41,11 @@ namespace StateStore.Controllers
 
             if (identity == null)
             {
+                _logger.LogError("State not found for Key: {key}", name);
                 return NotFound();
             }
 
+            _logger.LogInformation("Reading State Key: {key}, Value: {value}", name, identity);
             return Ok(identity);
         }
     }
