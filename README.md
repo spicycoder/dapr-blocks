@@ -2,11 +2,11 @@
 
 `Dapr` building blocks - to create micro services
 
-1. State Management
-1. Service Invocation
-1. Pub / Sub
-1. Secret Management
-1. Bindings
+- [x] State Management
+- [x] Secret Management
+- [ ] Service Invocation
+- [ ] Pub / Sub
+- [ ] Bindings
 
 ---
 
