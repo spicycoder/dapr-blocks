@@ -2,6 +2,8 @@ name: bindings
 extensions:
   - name: dapr
     components-path: "./components"
+  - name: seq
+    logPath: ./.logs
 services:
   - name: iobindings
     project: ./InputOutputBindings/InputOutputBindings.csproj
