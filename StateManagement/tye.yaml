@@ -1,7 +1,7 @@
 name: statemanagement
 extensions:
   - name: dapr
-    components: "./components"
+    components-path: "./components/"
 services:
 - name: state-management
   project: ./StateStore/StateStore.csproj

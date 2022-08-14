@@ -21,8 +21,9 @@ Building blocks - to create micro services
 
 ## Additional Features
 
-1. Observability
-1. Logging
+- [ ] Observability
+- [ ] Logging
+- [ ] Deployment
 
 ---
 

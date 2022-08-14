@@ -30,6 +30,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Subscriber", "PubSub\Subscriber\Subscriber.csproj", "{CFC4827C-894C-4E3F-A899-96C1069096B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bindings", "Bindings", "{0AF21F68-BF09-452A-9E2B-784634156C71}"
+	ProjectSection(SolutionItems) = preProject
+		Bindings\tye.yaml = Bindings\tye.yaml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputOutputBindings", "Bindings\InputOutputBindings\InputOutputBindings.csproj", "{88E457A8-CF85-451C-BCA8-7DBE8A4D060F}"
 EndProject

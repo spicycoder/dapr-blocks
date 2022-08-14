@@ -1,0 +1,23 @@
+name: bindings
+extensions:
+  - name: dapr
+    components-path: "./components"
+services:
+  - name: iobindings
+    project: ./InputOutputBindings/InputOutputBindings.csproj
+    bindings:
+      - port: 2513
+        protocol: http
+  - name: mailhog
+    image: mailhog/mailhog
+    bindings:
+      - name: ui
+        port: 8025
+        containerPort: 8025
+        protocol: http
+      - name: smtp
+        port: 1025
+        containerPort: 1025
+        protocol: smtp
+    tags:
+      - mailhog
