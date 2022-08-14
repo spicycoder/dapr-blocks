@@ -4,6 +4,7 @@ extensions:
     components-path: "./components/"
   - name: seq
     logPath: ./.logs
+  - name: zipkin
 services:
 - name: secret-management
   project: ./SecretStore/SecretStore.csproj

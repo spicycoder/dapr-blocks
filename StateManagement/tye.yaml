@@ -4,6 +4,7 @@ extensions:
     components-path: "./components/"
   - name: seq
     logPath: ./.logs
+  - name: zipkin
 services:
 - name: state-management
   project: ./StateStore/StateStore.csproj
