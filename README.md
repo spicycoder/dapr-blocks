@@ -5,9 +5,15 @@ header: Dapr - Building Blocks
 footer: https://github.com/spicycoder/dapr-blocks
 ---
 
-# Dapr - Building Blocks
+# Dapr + Tye
 
 `Dapr` + `Tye` = ❤️
+
+![Building Blocks](./assets/building-blocks.jpg)
+
+---
+
+## Building Blocks
 
 Building blocks - to create micro services
 
