@@ -20,6 +20,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretStore", "SecretManagement\SecretStore\SecretStore.csproj", "{91F6F399-03A7-41CC-999A-B8D8F34D787A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PubSub", "PubSub", "{39544871-08FC-4A79-966B-D2FA61824AEA}"
+	ProjectSection(SolutionItems) = preProject
+		PubSub\README.md = PubSub\README.md
+		PubSub\tye.yaml = PubSub\tye.yaml
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Publisher", "PubSub\Publisher\Publisher.csproj", "{0E46D00B-64D9-45B1-ADDD-C7B9C894D406}"
 EndProject
@@ -35,6 +39,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{89137C38-994C-4B3B-9038-60CFB6C587BE}"
+	ProjectSection(SolutionItems) = preProject
+		Common\README.md = Common\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Common\Library\Library.csproj", "{12E98050-DE60-4DE9-A152-70E36AA18A2F}"
 EndProject
