@@ -1,6 +1,5 @@
 ---
 marp: true
-theme: gaia
 author: SpicyCoder
 header: Dapr - Building Blocks
 footer: https://github.com/spicycoder/dapr-blocks
