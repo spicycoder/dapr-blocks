@@ -15,7 +15,7 @@ Building blocks - to create micro services
 - [x] Secret Management
 - [x] Service Invocation
 - [x] Pub / Sub
-- [ ] Bindings
+- [x] Bindings
 
 ---
 
