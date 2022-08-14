@@ -8,7 +8,7 @@ namespace HeroesApi.Controllers
     [ApiController]
     public class HeroesController : ControllerBase
     {
-        public const string ContactsApiName = "contacts-api";
+        private const string ContactsApiName = "contacts-api";
         private readonly DaprClient _daprClient;
         private readonly ILogger<HeroesController> _logger;
 

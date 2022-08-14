@@ -8,12 +8,14 @@ footer: https://github.com/spicycoder/dapr-blocks
 
 # Dapr - Building Blocks
 
-`Dapr` building blocks - to create micro services
+`Dapr` + `Tye` = ❤️
+
+Building blocks - to create micro services
 
 - [x] State Management
 - [x] Secret Management
 - [x] Service Invocation
-- [ ] Pub / Sub
+- [x] Pub / Sub
 - [ ] Bindings
 
 ---

@@ -1,0 +1,21 @@
+name: pubsub
+extensions:
+  - name: dapr
+    components: "./components"
+services:
+  - name: publisher
+    project: ./Publisher/Publisher.csproj
+    bindings:
+      - port: 2509
+        protocol: http
+  - name: subscriber
+    project: ./Subscriber/Subscriber.csproj
+    bindings:
+      - port: 2511
+        protocol: http
+  - name: redis
+    image: redis
+    bindings:
+      - port: 6500
+        containerPort: 6379
+        connectionString: "${host}:${port}"
