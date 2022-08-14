@@ -12,7 +12,7 @@ footer: https://github.com/spicycoder/dapr-blocks
 
 - [x] State Management
 - [x] Secret Management
-- [ ] Service Invocation
+- [x] Service Invocation
 - [ ] Pub / Sub
 - [ ] Bindings
 
