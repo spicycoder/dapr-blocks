@@ -1,10 +1,3 @@
----
-marp: true
-author: SpicyCoder
-header: Dapr - Building Blocks
-footer: https://github.com/spicycoder/dapr-blocks
----
-
 # Publish & Subscribe
 
 Dapr - `Pub / Sub` building block

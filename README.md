@@ -1,10 +1,3 @@
----
-marp: true
-author: SpicyCoder
-header: Dapr - Building Blocks
-footer: https://github.com/spicycoder/dapr-blocks
----
-
 # Dapr + Tye
 
 `Dapr` + `Tye` = ❤️
@@ -17,11 +10,11 @@ footer: https://github.com/spicycoder/dapr-blocks
 
 Building blocks - to create micro services
 
-- [x] State Management
-- [x] Secret Management
-- [x] Service Invocation
-- [x] Pub / Sub
-- [x] Bindings
+- [x] [State Management](./StateManagement/README.md)
+- [x] [Secret Management](./SecretManagement/README.md)
+- [x] [Service Invocation](./ServiceInvocation/README.md)
+- [x] [Pub / Sub](./PubSub/README.md)
+- [x] [Bindings](./Bindings/README.md)
 
 ---
 
