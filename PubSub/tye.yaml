@@ -16,6 +16,5 @@ services:
   - name: redis
     image: redis
     bindings:
-      - port: 6500
-        containerPort: 6379
+      - port: 6379
         connectionString: "${host}:${port}"

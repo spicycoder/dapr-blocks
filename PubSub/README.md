@@ -44,5 +44,5 @@ spec:
   version: v1
   metadata:
   - name: redisHost
-    value: localhost:6500
+    value: localhost:6379
 ```
