@@ -1,0 +1,15 @@
+name: pubsub
+registry: spicycoder
+extensions:
+  - name: dapr
+services:
+  - name: publisher
+    project: ./Publisher/Publisher.csproj
+    bindings:
+      - port: 2509
+        protocol: http
+  - name: subscriber
+    project: ./Subscriber/Subscriber.csproj
+    bindings:
+      - port: 2511
+        protocol: http

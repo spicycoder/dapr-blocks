@@ -1,0 +1,15 @@
+name: serviceinvocation
+registry: spicycoder
+extensions:
+  - name: dapr
+services:
+  - name: heroes-api
+    project: ./HeroesAPI/HeroesAPI.csproj
+    bindings:
+      - port: 2505
+        protocol: http
+  - name: contacts-api
+    project: ./ContactsApi/ContactsApi.csproj
+    bindings:
+      - port: 2507
+        protocol: http

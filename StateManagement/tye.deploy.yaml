@@ -1,0 +1,10 @@
+name: statemanagement
+registry: spicycoder
+extensions:
+  - name: dapr
+services:
+- name: state-management
+  project: ./StateStore/StateStore.csproj
+  bindings:
+    - port: 2501
+      protocol: http
