@@ -21,3 +21,14 @@ services:
     bindings:
       - port: 6379
         connectionString: "${host}:${port}"
+  - name: rabbitmq
+    image: rabbitmq:3-management
+    bindings:
+      - name: ui
+        protocol: http
+        port: 15672
+        containerPort: 15672
+      - name: amqp
+        protocol: amqp
+        port: 5672
+        containerPort: 5672

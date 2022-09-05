@@ -39,3 +39,21 @@ spec:
   - name: redisHost
     value: localhost:6379
 ```
+
+---
+
+## RabbitMQ Configuration
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+  namespace: default
+spec:
+  type: pubsub.rabbitmq
+  version: v1
+  metadata:
+  - name: host
+    value: "amqp://localhost:5672"
+```
