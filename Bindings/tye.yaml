@@ -2,9 +2,6 @@ name: bindings
 extensions:
   - name: dapr
     components-path: "./components"
-  - name: seq
-    logPath: ./.logs
-  - name: zipkin
 services:
   - name: iobindings
     project: ./InputOutputBindings/InputOutputBindings.csproj

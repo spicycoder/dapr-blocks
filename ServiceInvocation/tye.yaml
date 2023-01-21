@@ -1,9 +1,6 @@
 name: serviceinvocation
 extensions:
   - name: dapr
-  - name: seq
-    logPath: ./.logs
-  - name: zipkin
 services:
   - name: heroes-api
     project: ./HeroesAPI/HeroesAPI.csproj
